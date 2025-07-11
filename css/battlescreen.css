@@ -1,5 +1,11 @@
-#battle-screen {}
-#enemy-screen {}
-#enemy-sprite {}
-#player-screen {}
-#player-sprite {}
+:root{
+  --screen-height: 400px;
+  --screen-width: 600px;
+}
+
+#battle-screen {
+  height: var(--screen-height);
+  width: var(--screen-width);
+  border: 1px solid black;
+}
+
