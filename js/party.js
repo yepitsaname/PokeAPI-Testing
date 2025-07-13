@@ -18,6 +18,7 @@ Party.loadSlot = (index, condition, pokemon) => {
   }
   return false;
 }
+
 Party.initialLoad = (() => {
 
   const loadFunction = (()=>{
@@ -32,3 +33,43 @@ Party.initialLoad = (() => {
   return setInterval(loadFunction, 100);
 })()
 
+Party.setUp = (()=>{
+  const setUp = ()=>{
+    Party.slot.forEach( pokemon => {
+      pokemon.iv = {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        'sp atk': 0,
+        'sp def': 0,
+        spd: 0
+      }
+      pokemon.ev = {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        'sp atk': 0,
+        'sp def': 0,
+        spd: 0
+      }
+      pokemon.stat = {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        'sp atk': 0,
+        'sp def': 0,
+        spd: 0
+      }
+      pokemon.growth = {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        'sp atk': 0,
+        'sp def': 0,
+        spd: 0
+      }
+    })
+  }
+  setUp();
+  return setUp;
+})()

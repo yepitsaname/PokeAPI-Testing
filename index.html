@@ -21,6 +21,7 @@
     <h1>PokeAPI Battles</h1>
   </header>
   <main>
+
     <!-- Battle Screen -->
     <div class="battles-screen-wrapper">
       <canvas id="battles-screen"></canvas>
@@ -39,7 +40,11 @@
         <button type="button" id="battles-option-four">Run</button>
       </div>
     </div>
+
+    <!-- Party Screen -->
     <div class="party-wrapper">
+
+      <!-- Party Slots -->
       <div class="party-overview">
 
         <div class="party-card" id="party-slot-one">
@@ -133,9 +138,39 @@
         </div>
 
       </div>
+
+      <!-- Party Screen Selected Pokemon -->
       <div class="party-selected">
 
+        <div class="party-selected-left">
+          <div class="party-selected-image-wrapper">
+            <img src="" alt="pokemon image" hidden>
+          </div>
+          <div class="party-selected-text">
+
+          </div>
+        </div>
+
+        <div class="party-selected-right">
+          <div class="party-selected-name-wrapper">
+            <h3 class="party-selected-name"></h3>
+          </div>
+          <div class="party-selected-stats-wrapper">
+            <canvas class="party-selected-canvas"></canvas>
+            <div class="party-selected-stats">
+              <p class="party-hit-point"></p>
+              <p class="party-attack"></p>
+              <p class="party-defense"></p>
+              <p class="special-attack"></p>
+              <p class="special-defense"></p>
+              <p class="speed"></p>
+            </div>
+          </div>
+          <div class="party-selected-moves-wrapper"></div>
+        </div>
+
       </div>
+
     </div>
   </main>
   <footer class="bottom-banner">
