@@ -63,6 +63,8 @@ Battles.calcDamage = (move, pokemon) => {
 */
 
 Battles.resizeScreen();
+
+/*
 let myInterval = setInterval(()=> {
   if( Pokemon.pokemon.hasOwnProperty('exeggutor') && Pokemon.pokemon.hasOwnProperty('diglett') ){
     document.querySelector('#battles-player').src = Pokemon.pokemon.exeggutor.sprites.back_default;
@@ -72,3 +74,5 @@ let myInterval = setInterval(()=> {
     clearInterval(myInterval)
   }
 }, 1000)
+
+*/
