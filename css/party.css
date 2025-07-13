@@ -1,19 +1,86 @@
 .party-wrapper{}
 
-.party-overview{}
+.party-overview{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
-.party-card{}
+.party-card{
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
 
-.party-slot-wrapper{}
+.party-slot-wrapper{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  z-index: 1;
+  background-color: white;
+}
 
-.party-slot-number{}
+.party-slot-number{
+  margin: 0px;
+  font-size: 14px;
+}
 
-.party-image-wrapper{}
+.party-image-wrapper{
+  position: relative;
+  top: -22.5px;
+  left: 0px;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: lightgrey
+}
 
-.party-image{}
+.party-image{
+  height: 100%;
+  width: 100%;
+}
 
-.party-slot-header{}
+.party-slot-header{
+  font-weight: 400;
+  border-top: 1px solid black;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: 10px;
+  z-index: 1;
+  background-color: white;
+
+  & p{
+    margin: 1px;
+    margin-right: 8px;
+    text-align: right;
+  }
+}
 
 .party-slot-level{}
 
 .party-slot-name{}
+
+.party-font-size-10 {
+  font-size: 10px;
+}
+
+.party-font-size-11{
+  font-size: 11px;
+}
+
+.party-font-size-12 {
+  font-size: 12px;
+}
+
+.party-font-size-13{
+  font-size: 13px;
+}
