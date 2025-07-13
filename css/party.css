@@ -1,4 +1,6 @@
-.party-wrapper{}
+.party-wrapper{
+  margin: 1em;
+}
 
 .party-overview{
   display: flex;
