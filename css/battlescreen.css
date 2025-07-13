@@ -1,11 +1,51 @@
-:root{
+.battles-screen-wrapper{
   --screen-height: 400px;
   --screen-width: 600px;
 }
 
-#battle-screen {
+#battles-screen{
   height: var(--screen-height);
   width: var(--screen-width);
   border: 1px solid black;
 }
 
+.battles-actions{
+  display: grid;
+  grid-template: ". left . top-left top-right ." auto ". left . bottom-left bottom-right ." auto / 0.75fr 1.5fr 0.25fr 0.5fr 0.5fr 1fr;
+}
+
+#battles-option-one{
+  grid-area: top-left;
+  justify-self: right;
+}
+
+#battles-option-two{
+  grid-area: top-right;
+  justify-self: left;
+}
+
+#battles-option-three{
+  grid-area: bottom-left;
+  justify-self: right;
+}
+
+#battles-option-four{
+  grid-area: bottom-right;
+  justify-self: left;
+}
+
+.battles-actions button{
+  height: 4em;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.battles-messages{
+  grid-area: left;
+}
+
+#battles-messages{
+  height: 70%;
+  width: 100%;
+}

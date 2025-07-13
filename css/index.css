@@ -1,0 +1,28 @@
+body{
+  display: grid;
+  grid-template:
+    1fr auto auto auto 0.5fr /
+    1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'header header header header'
+    'left main main right'
+    'left main main right'
+    'left main main right'
+    'footer footer footer footer';
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title-banner {
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+}
+
+.bottom-banner{
+  grid-area: footer;
+}

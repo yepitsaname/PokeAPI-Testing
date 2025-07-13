@@ -16,14 +16,42 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-
-  <!-- Battle Screen -->
-  <div id="battle-screen-wrapper">
-    <canvas id="battle-screen"></canvas>
-    <div id="pokemon-sprites" >
-      <img id="active-player"/>
-      <img id="active-enemy"/>
+  <header class="title-banner">
+    <h1>PokeAPI Battles</h1>
+  </header>
+  <main>
+    <!-- Battle Screen -->
+    <div class="battles-screen-wrapper">
+      <canvas id="battles-screen"></canvas>
+      <div hidden class="battles-sprites" >
+        <img id="battles-player"/>
+        <img id="battles-enemy"/>
+      </div>
+      <div class="battles-actions">
+        <div class="battles-messages">
+          <label for="battles-messages">Message Log:</label>
+          <input type="text-box" id="battles-messages"></input>
+        </div>
+        <button type="button" id="battles-option-one">Moves</button>
+        <button type="button" id="battles-option-two">Items</button>
+        <button type="button" id="battles-option-three">Switch</button>
+        <button type="button" id="battles-option-four">Run</button>
+      </div>
     </div>
-  </div>
+    <div class="party-wrapper">
+      <div class="party-overview">
+        <div class="party-pokemon-card"></div>
+        <div class="party-pokemon-card"></div>
+        <div class="party-pokemon-card"></div>
+        <div class="party-pokemon-card"></div>
+        <div class="party-pokemon-card"></div>
+        <div class="party-pokemon-card"></div>
+      </div>
+      <div class="party-selected"></div>
+    </div>
+  </main>
+  <footer class="bottom-banner">
+    <h4>Designed and built by @yepitsaname</h4>
+  </footer>
 </body>
 </html>
