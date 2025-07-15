@@ -4,6 +4,6 @@ const Player = {
 };
 
 
-Pokemon.getRequest('Exeggutor');
-Pokemon.getRequest('Diglett');
+Pokemon.request('Exeggutor');
+Pokemon.request('Diglett');
 
