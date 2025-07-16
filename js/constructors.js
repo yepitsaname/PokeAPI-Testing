@@ -85,7 +85,7 @@ class PokemonObject{
   constructor(pokedexService, name){
     this.pokedexService = pokedexService
     this.name = name;
-    this.#nature = 'bashful';
+    this.#nature = PokemonObject.#generateNature();
     this.#base = [5,5,5,5,5,5];
     this.#iv = PokemonObject.#generateIVs();
     this.#ev = [0,0,0,0,0,0];
@@ -173,7 +173,12 @@ class PokemonObject{
     }
   }
 
-  static #generateNature(){}
+  static #generateNature(){
+    const key_set = Object.keys(PokemonObject.#natureSets);
+    const nature_key = Math.round(Math.random() * (key_set.length - 1));
+    return key_set[nature_key];
+
+  }
 
   static #generateIVs(){
     let iv_set = [];
